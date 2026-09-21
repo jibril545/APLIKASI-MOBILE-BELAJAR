@@ -1,0 +1,90 @@
+{
+  "expo": {
+    "name": "Study Time",
+    "slug": "kode",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "updates": {
+      "url": "https://u.expo.dev/55bb342c-be46-4d63-ada9-f381abf150df"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "icon": "./assets/images/icon.png",
+    "scheme": "kode",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.student_panto.kode",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-sqlite",
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/android-icon-monochrome.png",
+          "color": "#5B8FA8",
+          "defaultChannel": "study-reminders"
+        }
+      ],
+      "expo-asset",
+      "expo-sharing",
+      "expo-video"
+    ],
+    "notification": {
+      "icon": "./assets/images/android-icon-monochrome.png",
+      "color": "#5B8FA8",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Study Time"
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "55bb342c-be46-4d63-ada9-f381abf150df"
+      }
+    }
+  }
+}
